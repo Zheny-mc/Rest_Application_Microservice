@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+app:
+  rest:
+    api:
+      prefix: /api
+
+
+customer-client:
+  url: "http://localhost:8081/customer"
+
+
+

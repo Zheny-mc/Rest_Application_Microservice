@@ -1,0 +1,13 @@
+server:
+  port: 8083
+
+customer-client:
+  url: "http://localhost:8082/api/customer"
+
+app:
+  rest:
+    api:
+      prefix: /api
+  telegram:
+    url: https://api.telegram.org
+    refresh-rate-ms: 2500
