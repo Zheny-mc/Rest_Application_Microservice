@@ -19,7 +19,6 @@ public class CurrencyCustomerService {
 
     public Customer getCustomer(Integer id){
 	    log.info("getCurrencyCustomer. id:{}", id);
-		getDelay(1000);
 		Customer customer = null;
 
 //	    var cachedCurrencyCustomers = currencyCustomerCache.get(id);
@@ -39,10 +38,5 @@ public class CurrencyCustomerService {
 //	    }
 
     	return customer;
-	}
-
-	public void getDelay(int delay) {
-		try {Thread.sleep(delay);}
-		catch (InterruptedException e) {e.printStackTrace();}
 	}
 }

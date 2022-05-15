@@ -28,6 +28,11 @@ public class CurrencyRateController {
 		return currencyCustomerService.getCustomer(id);
 	}
 
+	public void getDelay(int delay) {
+		try {Thread.sleep(delay);}
+		catch (InterruptedException e) {e.printStackTrace();}
+	}
+
 	@PostMapping
 	public Customer createCustomer(@RequestBody Customer customer){
 		return repository.save(customer);

@@ -1,5 +1,10 @@
 server:
   port: 8081
+#  tomcat:
+#    threads:
+#      min-spare: 10
+#      max: 2
+
 
 app:
   cache:
@@ -9,7 +14,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+#    show-sql: true
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres

@@ -21,7 +21,6 @@ public class CurrencyCustomerEndpointController {
     @GetMapping("/{id}")
     public CurrencyCustomer getCurrencyCustomer(@PathVariable Integer id)  {
         log.info("getCurrencyCustomer in client, id:{}", id);
-        //getDelay(1000);
         return currencyRateEndpointService.getCurrencyRate(id);
     }
 

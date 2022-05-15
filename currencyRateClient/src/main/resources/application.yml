@@ -1,6 +1,9 @@
 server:
   port: 8082
-
+#  tomcat:
+#    threads:
+#      min-spare: 1
+#      max: 20
 app:
   rest:
     api:
